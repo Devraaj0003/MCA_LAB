@@ -23,10 +23,10 @@ struct node* insert(struct node* root,int value) {
   else if(value == root->data){
   	printf("Same data can't be stored");
   }
-  else if(value>root->data){
+  else if(value > root->data){
   	root->right = insert(root->right,value);
   }
-  else if(value<root->data){
+  else if(value < root->data){
   	root->left = insert(root->left,value);
   }
   return root;
